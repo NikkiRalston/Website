@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pilot Application</title>
+    <link rel="stylesheet" type="text/css" href="Application.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <a href="#" class="logo">Space Tours</a>
+            <ul>
+                <li><a href="Tours.html">Home</a></li>
+                <li><a href="About Space.html">About Space</a></li>
+                <li><a href="Application.html" class="active">Application</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h1 id="title"></h1>
+            <p id="subtitle"></p>
+            <p id="description"></p>
+            <form id="pilotForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br><br>
+                <label for="experience">Flight Experience (in hours):</label>
+                <input type="number" id="experience" name="experience" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="reason">Reason for Wanting to be a Space Pilot:</label>
+                <textarea id="reason" name="reason" required></textarea><br><br>
+                <input type="submit" value="Submit Application">
+                <p class="error" id="error"></p>
+            </form>
+        </div>
+    </div>
+    <script src="Application.js"></script>
+</body>
+</html>
+
+
+

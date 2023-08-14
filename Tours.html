@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Welcome To Space Tours</title>
+    <link rel="stylesheet" type="text/css" href="Tours.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Space Tours</a>
+        <ul>
+            <li> <a href="Tours.html" class="active">Home</a></li>
+            <li> <a href="About Space.html">About Space</a></li>
+            <li> <a href="Application.html">Applcation</a></li>
+            <li> <a href="Contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <h2 id="text"> Space Tours</h2>
+        <a href="#sec" id="btn"> Explore</a>
+        <img src="mountains_behind.png" id="mountains_behind">
+        <img src="mountains_front.png" id="mountains_front">
+        
+    </section>
+    <div class="sec" id="sec">
+        <h2> Learn about Our Tours Around Space</h2>
+        <p> 🚀Experience the Unbelievable: Journey to the Stars!🌌
+
+            🌠 Escape the confines of Earth and embark on an extraordinary space tour with Galactic Expeditions! Witness the magnificence of distant galaxies, float in zero gravity, and explore celestial wonders like never before. Guided by seasoned astronauts, our cutting-edge spacecraft ensures your safety and comfort while offering a customizable itinerary to suit your space dreams. Become part of space exploration history and book your limited spot today! Dare to reach for the stars! 🌠.</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+           mountains_front.style.top = value * 0 + 'px';
+           text.style.marginRight = value * 4 + 'px';
+           text.style.marginTop = value * 1.5 + 'px';
+           btn.style.marginTop = value * 1.5 + 'px';
+           header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
